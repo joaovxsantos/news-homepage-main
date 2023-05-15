@@ -15,7 +15,7 @@ header {
   justify-content: space-between;
   align-items: center;
   /* background: red; */
-  width: 80%;
+  width: 65%;
   margin: auto;
   padding: 30px 20px;
 }
@@ -34,4 +34,78 @@ header ul li {
 header ul li:hover {
   color: hsl(35, 77%, 62%);
   cursor: pointer;
+}
+
+main {
+  display: grid;
+  grid-template: auto auto auto / auto auto auto;
+  grid-template-areas:
+    "a1 a1 a2"
+    "a3 a4 a2"
+    "a5 a5 a5";
+  /* justify-content: center; */
+  gap: 30px;
+  width: 65%;
+  margin: auto;
+  padding: 30px 20px;
+  /* background: pink; */
+}
+
+main div {
+  width: 200px;
+  height: 200px;
+}
+
+main img {
+  width: 100%;
+  height: 300px;
+  grid-area: a1;
+}
+main #d2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: hsl(240, 100%, 5%);
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  grid-area: a2;
+  padding: 20px 30px;
+  color: #fff;
+  font-weight: 700;
+}
+
+main #d2 .infos {
+  width: 320px;
+  height: 100px;
+  border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+
+main #d2 h2 {
+  color: hsl(35, 77%, 62%);
+  font-size: 35px;
+}
+
+main #d2 p {
+  margin: 0 0 10px 0;
+}
+
+main #d2 label {
+  font-weight: 400;
+  color: hsl(233, 8%, 79%);
+}
+
+main #d3 {
+  background: blue;
+  grid-area: a3;
+}
+
+main #d4 {
+  background: violet;
+  grid-area: a4;
+}
+
+main #d5 {
+  background: orange;
+  grid-area: a5;
 }
