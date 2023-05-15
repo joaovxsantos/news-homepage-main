@@ -116,6 +116,7 @@ main #d2 label {
 main #d3 {
   grid-area: a3;
   width: 100%;
+  min-width: 200px;
 }
 
 main #d3 h1 {
@@ -140,10 +141,31 @@ main #d4 button {
   letter-spacing: 2px;
   cursor: pointer;
   margin-top: 10px;
+  /* position: absolute;
+  bottom: 0; */
 }
 
 main #d5 {
-  background: orange;
+  /* background: orange; */
   grid-area: a5;
   width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+main .card {
+  display: flex;
+  width: 33%;
+  background: red;
+}
+
+main #d5 img {
+  width: 150px;
+  height: 100%;
+  margin-right: 20px;
+}
+
+main .card label {
+  font-size: 20px;
+  color: hsl(236, 13%, 42%);
 }
