@@ -10,12 +10,17 @@
   src: url(./assets/fonts/static/Inter-Regular.ttf);
 }
 
+@font-face {
+  font-family: inter-extra-bold;
+  src: url(./assets/fonts/static/Inter-ExtraBold.ttf);
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   /* background: red; */
-  width: 65%;
+  width: 70%;
   margin: auto;
   padding: 30px 20px;
 }
@@ -45,7 +50,7 @@ main {
     "a5 a5 a5";
   /* justify-content: center; */
   gap: 30px;
-  width: 65%;
+  width: 70%;
   margin: auto;
   padding: 30px 20px;
   /* background: pink; */
@@ -67,7 +72,7 @@ main #d2 {
   justify-content: space-around;
   background: hsl(240, 100%, 5%);
   width: 100%;
-  max-width: 100%;
+  /* max-width: 100%; */
   height: 100%;
   grid-area: a2;
   padding: 20px 30px;
@@ -78,6 +83,13 @@ main #d2 {
 main #d2 .infos {
   width: 320px;
   height: 100px;
+}
+
+main #d2 div:nth-of-type(1) {
+  border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+
+main #d2 div:nth-of-type(2) {
   border-bottom: 1px solid hsl(236, 13%, 42%);
 }
 
@@ -88,6 +100,12 @@ main #d2 h2 {
 
 main #d2 p {
   margin: 0 0 10px 0;
+  transition: all 500ms ease;
+}
+
+main #d2 p:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
 }
 
 main #d2 label {
@@ -96,16 +114,36 @@ main #d2 label {
 }
 
 main #d3 {
-  background: blue;
   grid-area: a3;
+  width: 100%;
+}
+
+main #d3 h1 {
+  font-size: 40px;
+  width: 270px;
+  font-family: inter-extra-bold;
 }
 
 main #d4 {
-  background: violet;
   grid-area: a4;
+  width: 100%;
+  text-align: justify;
+  position: relative;
+}
+main #d4 p {
+  line-height: 22px;
+}
+main #d4 button {
+  background: hsl(240, 100%, 5%);
+  color: #fff;
+  padding: 10px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  margin-top: 10px;
 }
 
 main #d5 {
   background: orange;
   grid-area: a5;
+  width: 100%;
 }
