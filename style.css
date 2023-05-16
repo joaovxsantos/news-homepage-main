@@ -73,27 +73,77 @@ main #web3 {
 
 main #newInfos {
   grid-area: a2;
-  height: 100%;
-  background: red;
   width: 300px;
+  background: hsl(240, 100%, 5%);
+  padding: 20px;
+}
+
+main #newInfos > h2 {
+  color: hsl(35, 77%, 62%);
+  font-size: 35px;
+  font-weight: 700;
+}
+
+#newInfos .infos p {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+  transition: all 500ms ease;
+}
+
+#newInfos .infos p:hover {
+  color: hsl(35, 77%, 62%);
+  cursor: pointer;
+}
+
+#newInfos .infos label {
+  color: hsl(236, 13%, 42%);
+  font-size: 16px;
+  line-height: 22px;
+}
+#newInfos div {
+  padding: 30px 0px;
+}
+#newInfos div:nth-last-of-type(2),
+#newInfos div:nth-last-of-type(3) {
+  border-bottom: 1px solid hsl(236, 13%, 42%);
 }
 
 main #item3 {
   grid-area: a3;
-  background: green;
   width: 300px;
 }
 
 main #item3 h1 {
   font-size: 50px;
+  line-height: 52px;
 }
 
 main #item4 {
   grid-area: a4;
-  background: red;
   width: 400px;
   line-height: 22px;
   font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main #item4 button {
+  width: 180px;
+  padding: 15px 25px;
+  background: hsl(5, 85%, 63%);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  letter-spacing: 5px;
+  font-weight: 700;
+  transition: all ease 500ms;
+}
+
+main #item4 button:hover {
+  background: hsl(240, 100%, 5%);
 }
 
 main #item5 {
