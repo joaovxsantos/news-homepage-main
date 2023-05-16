@@ -221,16 +221,18 @@ header .menu {
     display: block;
     position: absolute;
     background: #fff;
+    
     width: 70vw;
     height: 100vh;
     top: 0;
     right: 0;
     padding: 30px;
+    z-index: 1;
   }
 
-  /* body {
+  header .menu.active main {
     filter: grayscale(80%);
-  } */
+  }
 
   header .menu svg {
     position: relative;
