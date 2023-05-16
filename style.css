@@ -228,6 +228,10 @@ header .menu {
     padding: 30px;
   }
 
+  /* body {
+    filter: grayscale(80%);
+  } */
+
   header .menu svg {
     position: relative;
     left: 180px;
